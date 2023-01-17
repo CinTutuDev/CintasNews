@@ -1,8 +1,8 @@
 # 📡app-noticias
 
 Realizo el proyecto con Ionic/Angular
+✔Comienzo el proyecto con los comandos:
 ```
-*Lo comienzo con los comandos:
  ionic start
  ? Framework: Angular
  ? Starter template: tabs
