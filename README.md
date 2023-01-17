@@ -1,0 +1,2 @@
+# app-noticias
+Ionic/angular
