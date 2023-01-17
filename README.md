@@ -1,2 +1,2 @@
-# app-noticias
+# 📡app-noticias
 Ionic/angular
