@@ -9,4 +9,8 @@ Realizo el proyecto con Ionic/Angular
  ? Starter template: tabs
 
 ```
- 
+ ## URL/IMP/API 
+```
+*API Noticias:
+https://newsapi.org/
+```
