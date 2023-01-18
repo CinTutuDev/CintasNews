@@ -11,6 +11,12 @@ export class ApiNewsService {
 
   getTopHeadlines() {
     return this.http.get(
-      `https://newsapi.org/v2/everything?q=tesla&from=2022-12-18&sortBy=publishedAt&apiKey=${apiKey}`);
+    /*  El original api: 
+      https://newsapi.org/v2/everything?q=tesla&from=2022-12-18&sortBy=publishedAt&apiKey=0a200e94af064a2d8ad268a931802c59 */
+      `https://newsapi.org/v2/everything?q=tesla&from=2022-12-18&sortBy=publishedAt`,{
+        params:{
+          apiKey
+        }
+      });
   }
 }
