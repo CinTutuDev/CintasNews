@@ -4,13 +4,19 @@
 
 ### ✔Comienzo el proyecto con los comandos:
 ```
- ionic start
- ? Framework: Angular
- ? Starter template: tabs
+   ionic start
+   ? Framework: Angular
+   ? Starter template: tabs
 
 ```
  ## URL/IMP/API 
 ```
 *API Noticias:
-https://newsapi.org/
+   https://newsapi.org/
+```
+## Crear servicio para interactuar con back para petición API
+
+```
+*Crear servicio sin archivo de prueba
+   ionic g s services/apiNews --skip-tests 
 ```
