@@ -7,12 +7,11 @@ import { ApiNewsService } from '../../services/api-news.service';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page implements OnInit {
-
   constructor(private apiNewsService: ApiNewsService) {}
-  
+
   ngOnInit() {
-    this.apiNewsService.getTopHeadlines().subscribe((respuesta) => {
-      console.log(respuesta);
+    this.apiNewsService.getTopHeadlines().subscribe((articles) => {
+      console.log(articles);
     });
   }
 }
