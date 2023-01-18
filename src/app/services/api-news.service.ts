@@ -24,7 +24,6 @@ export class ApiNewsService {
           },
         }
       )
-      .pipe(
-        map(({articles}) => articles));
+      .pipe(map(({ articles }) => articles));
   }
 }
