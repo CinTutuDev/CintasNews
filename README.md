@@ -10,23 +10,12 @@
    ? Starter template: tabs
 
 ```
-<<<<<<< HEAD
-
-## URL/IMP/API
-
-=======
- ## 🧵URL/IMP/API 
->>>>>>> 2bf192c92585cf3f7f7d4eabc361784739640c1e
+ ## URL/IMP/API 
 ```
 *API Noticias:
    https://newsapi.org/
 ```
-<<<<<<< HEAD
-
 ## Crear servicio para interactuar con back para petición API
-=======
-## 🎱Crear servicio para interactuar con back para petición API
->>>>>>> 2bf192c92585cf3f7f7d4eabc361784739640c1e
 
 ```
 *Crear servicio sin archivo de prueba
@@ -41,7 +30,6 @@
 
 ```
 
-<<<<<<< HEAD
 ## Generar modulos, componentes, servicios...
 
 ```
@@ -54,11 +42,7 @@
 *Crear componente dentro de otro componente
    ionic g c components/articles
 ```
-
-## Generar interfaces
-=======
-## 🎓Generar interfaces 
->>>>>>> 2bf192c92585cf3f7f7d4eabc361784739640c1e
+## Generar interfaces 
 
 ```
    Necesito extensión (Paste JSON as Code) ó (https://app.quicktype.io/)
