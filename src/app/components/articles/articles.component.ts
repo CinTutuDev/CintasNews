@@ -7,6 +7,7 @@ import { Article } from '../../interfaces';
   styleUrls: ['./articles.component.scss'],
 })
 export class ArticlesComponent {
+  //el @Input llama a la interface
   @Input() articles: Article[] = [];
 
   constructor() {}

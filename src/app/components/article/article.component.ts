@@ -7,14 +7,12 @@ import { Article } from '../../interfaces';
   styleUrls: ['./article.component.scss'],
 })
 export class ArticleComponent implements OnInit {
-
   @Input()
   article!: Article;
   @Input()
   index!: number;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
-
 }
