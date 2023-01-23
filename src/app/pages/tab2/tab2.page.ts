@@ -9,7 +9,8 @@ import { IonInfiniteScroll } from '@ionic/angular';
   styleUrls: ['tab2.page.scss'],
 })
 export class Tab2Page implements OnInit {
-  @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll | undefined;
+  @ViewChild(IonInfiniteScroll, {static:true})
+  infiniteScroll!: IonInfiniteScroll;
 
   public cagories: string[] = [
     'business',
@@ -41,18 +42,18 @@ export class Tab2Page implements OnInit {
       });
   }
 
-  loadData(event: any) {
+  loadData() {
     this.apiNewsService
       .getTopHeadlinesByCategory(this.selectedCategory, true)
       .subscribe((articles) => {
 
         if (articles.length === this.articles.length ) {
-          event.target.disabled = true;
+          this.infiniteScroll.disabled = true;
           return;
         }
 
         this.articles = articles;
-        event.target.complete();
+      this.infiniteScroll?.complete();
       });
   }
   
