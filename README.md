@@ -71,3 +71,12 @@ import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
 ```
 
 ## ![androide36](https://user-images.githubusercontent.com/71487857/199188171-195d30ba-e4b6-4f3f-bea1-bbf09369c70a.jpg) LEVANTAR APP EN ANDROID
+
+´´´
+1º Capacitor
+   ionic capacitor add android
+2º Para actualizar android
+   ionic capacitor copy android
+3º Levantar en movil
+   ionic capacitor run android
+´´´
