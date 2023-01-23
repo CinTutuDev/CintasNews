@@ -18,8 +18,19 @@
     mode="md"
   >
     <ion-segment-button *ngFor="let i of cagories" [value]="i">
-      <ion-label class="ion-text-capitalize" >{{i}}</ion-label>
+      <ion-label class="ion-text-capitalize">{{i}}</ion-label>
     </ion-segment-button>
   </ion-segment>
   <app-articles [articles]="articles"></app-articles>
+
+  <ion-infinite-scroll 
+  threshold="25%"
+  position="bottom" 
+  (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Cargando datos..."
+    >
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>
