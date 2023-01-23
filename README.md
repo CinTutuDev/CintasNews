@@ -53,3 +53,21 @@
    En el mismo fichero presionamos Ctrl + Shift + v
    Ponemos nombre + intro
 ```
+
+## 🔧 Pluggins ↪️ In App Browser
+
+```
+https://ionicframework.com/docs/v5/native/in-app-browser
+
+$ ionic cordova plugin add cordova-plugin-inappbrowser 
+$ npm install @awesome-cordova-plugins/in-app-browser 
+
+import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
+ providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    InAppBrowser,
+  ],
+
+```
+
+## ![androide36](https://user-images.githubusercontent.com/71487857/199188171-195d30ba-e4b6-4f3f-bea1-bbf09369c70a.jpg) LEVANTAR APP EN ANDROID
