@@ -2,14 +2,14 @@
   <!-- <ion-card-title>Card Title</ion-card-title> -->
   <ion-card-subtitle class="ion-margin">
 
-    <ion-row class="ion-align-items-center" (click)="openArticle">
-      <ion-col class="ion-margin">
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-margin" (click)="openArticle">
         <span class="article-source-name">{{ article.source.name }}</span>
         <span class="text-primary">{{ index }}. </span>
       </ion-col>
 
       <ion-col aling="right">
-        <ion-button (click)="onClick()" fill="clear">
+        <ion-button (click)="openMenu()" fill="clear">
           <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
         </ion-button>
         
