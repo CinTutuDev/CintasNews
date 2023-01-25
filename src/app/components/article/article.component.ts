@@ -62,6 +62,7 @@ export class ArticleComponent {
     this.socialSharing.share(
       title,
       source.name,
+   /*    null, */
       url
     );
 

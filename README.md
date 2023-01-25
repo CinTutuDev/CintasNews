@@ -88,3 +88,5 @@ More tools --> remote deivces
 *Si no lo encuentro escribo esto :
 chrome://inspect/#devices
 *En Port forwarding... poner el puerto (localhost:8100) y darle a done
+
+
