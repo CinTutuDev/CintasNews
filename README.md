@@ -76,6 +76,15 @@ import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
    ionic capacitor add android
 2º Para actualizar android
    ionic capacitor copy android
-3º Levantar en movil
+3aº Levantar en movil
    ionic capacitor run android
+             ó
+3bº ionic capacitor run android -l --external             
 ```
+## 🔎 Herramientas de desarrollo
+
+```
+More tools --> remote deivces
+*Si no lo encuentro escribo esto :
+chrome://inspect/#devices
+*En Port forwarding... poner el puerto (localhost:8100) y darle a done
