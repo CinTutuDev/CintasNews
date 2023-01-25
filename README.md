@@ -88,3 +88,13 @@ More tools --> remote deivces
 *Si no lo encuentro escribo esto :
 chrome://inspect/#devices
 *En Port forwarding... poner el puerto (localhost:8100) y darle a done
+```
+
+ ## ![descarga](https://user-images.githubusercontent.com/71487857/214578135-16d1a768-8961-4099-82ce-43045983b5f6.png)@ionic/storage
+ 
+```
+ URL
+ https://github.com/ionic-team/ionic-storage
+ ```
+ 
+ 
