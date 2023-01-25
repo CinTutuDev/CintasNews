@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { Article } from '../../interfaces';
 import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
-import { ActionSheetController, Platform } from '@ionic/angular';
+import {ActionSheetButton, ActionSheetController, Platform } from '@ionic/angular';
+import { SocialSharing } from "@awesome-cordova-plugins/social-sharing/ngx";
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
@@ -16,41 +17,54 @@ export class ArticleComponent {
   constructor(
     private iab: InAppBrowser,
     private platform: Platform,
-    private actionSheet: ActionSheetController
+    private actionSheetC: ActionSheetController,
+     private socialSharing: SocialSharing,
   ) {}
 
   async openMenu() {
-    const actionSheet = await this.actionSheet.create({
+    const normalBtns: ActionSheetButton[] = [
+      {
+        text:  '💚Favorito',
+        icon:  'heart-outline',
+        handler: () => this.onToggleFavorite()
+      },
+      {
+        text: '🚨Cancelar',
+        icon: 'close-outline',
+        role: 'cancel',
+      }
+    ]
+
+    const shareBtn: ActionSheetButton = {
+      text: 'Compartir',
+      icon: 'share-outline',
+      handler: () => this.onShareArticle()
+    };
+
+    if ( this.platform.is('capacitor') ) {
+      normalBtns.unshift(shareBtn);
+    }
+
+
+    const actionSheet = await this.actionSheetC.create({
       header: 'Opciones',
-      buttons: [
-        {
-          text: 'Compartir',
-          icon: 'share-outline',
-          cssClass: 'compartir',
-          handler: () => this.onShareArticle(),
-        },
-        {
-          text: 'Favoritos',
-          icon: 'heart-outline',
-          cssClass: 'favorite',
-          handler: () => this.onToggleFavorite(),
-        },
-        {
-          text: 'Cancel',
-          icon: 'close-outline',
-          role: 'cancel',
-          cssClass: 'red',
-          handler: () => {
-            // Nothing to do, action sheet is automatically closed
-          },
-        },
-      ],
+      buttons: normalBtns
     });
+
+    
+
     await actionSheet.present();
   }
 
   onShareArticle() {
-    console.log('Hoja de acción');
+    const { title, source, url } = this.article;
+    
+    this.socialSharing.share(
+      title,
+      source.name,
+      url
+    );
+
   }
   onToggleFavorite() {
     console.log('Alrtenar favoritos');
