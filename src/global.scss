@@ -32,7 +32,9 @@
   font-size: 12px;
 }
 .red {
-  color: red !important;
+  /* color: red !important; */
+  -webkit-text-fill-color:red !important;
+  -webkit-text-stroke: 1px black;
 }
 .favorite {
   color: violet !important;

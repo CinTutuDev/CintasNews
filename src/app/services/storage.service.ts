@@ -46,8 +46,11 @@ export class StorageService {
     } catch (error) {}
   }
   articleInFavorites(article: Article) {
+    //si existe el obj entonces devuelve valor
     return !!this._localArt.find(
       (localArticle) => localArticle.title === article.title
     );
   }
+
+
 }

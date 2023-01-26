@@ -43,15 +43,17 @@ export class ArticleComponent {
     );
 
     const normalBtns: ActionSheetButton[] = [
-      {
-        text: articleInFavorite ? 'Remover favorito' : 'Favorito',
-        icon: articleInFavorite ? 'heart' : 'heart-outline',
+      {//si el articulo está en favoritos remover favorito
+        text: articleInFavorite ? '✂️Borrar de favorito' : '💚Favorito',
+        /* icon: articleInFavorite ? 'heart' : 'heart-outline', */
+        cssClass: 'green' ,
         handler: () => this.onToggleFavorite(),
       },
       {
-        text: 'Cancelar',
-        icon: 'close-outline',
+        text: '💣Cancelar',
+        /* icon: 'close-outline', */
         role: 'cancel',
+        cssClass: 'red'
       },
     ];
 
@@ -67,6 +69,7 @@ export class ArticleComponent {
 
     const actionSheet = await this.actionSheetC.create({
       header: 'Opciones',
+      cssClass: 'blue',
       buttons: normalBtns,
     });
 
