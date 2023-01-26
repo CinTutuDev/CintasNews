@@ -10,8 +10,9 @@
    ? Starter template: tabs
 
 ```
- ## 🧵URL/IMP/API 
- 
+
+## 🧵URL/IMP/API
+
 ```
 *API Noticias:
    https://newsapi.org/
@@ -45,7 +46,7 @@
    ionic g c components/articles
 ```
 
-## 🎓Generar interfaces 
+## 🎓Generar interfaces
 
 ```
    Necesito extensión (Paste JSON as Code) ó (https://app.quicktype.io/)
@@ -59,8 +60,8 @@
 ```
 https://ionicframework.com/docs/v5/native/in-app-browser
 
-$ ionic cordova plugin add cordova-plugin-inappbrowser 
-$ npm install @awesome-cordova-plugins/in-app-browser 
+$ ionic cordova plugin add cordova-plugin-inappbrowser
+$ npm install @awesome-cordova-plugins/in-app-browser
 
 import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
  providers: [
@@ -71,16 +72,18 @@ import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
 ```
 
 ## ![androide36](https://user-images.githubusercontent.com/71487857/199188171-195d30ba-e4b6-4f3f-bea1-bbf09369c70a.jpg) LEVANTAR APP EN ANDROID
- ```
-1º Capacitor
-   ionic capacitor add android
-2º Para actualizar android
-   ionic capacitor copy android
-3aº Levantar en movil
-   ionic capacitor run android
-             ó
-3bº ionic capacitor run android -l --external             
+
 ```
+1º Capacitor
+  ionic capacitor add android
+2º Para actualizar android
+  ionic capacitor copy android
+3aº Levantar en movil
+  ionic capacitor run android
+            ó
+3bº ionic capacitor run android -l --external
+```
+
 ## 🔎 Herramientas de desarrollo
 
 ```
@@ -90,11 +93,51 @@ chrome://inspect/#devices
 *En Port forwarding... poner el puerto (localhost:8100) y darle a done
 ```
 
- ## ![descarga](https://user-images.githubusercontent.com/71487857/214578135-16d1a768-8961-4099-82ce-43045983b5f6.png)@ionic/storage
- 
+## ![descarga](https://user-images.githubusercontent.com/71487857/214578135-16d1a768-8961-4099-82ce-43045983b5f6.png)@ionic/storage
+
 ```
  URL
  https://github.com/ionic-team/ionic-storage
- ```
- 
- 
+
+ *Instalación
+ npm install @ionic/storage
+
+ *Instalar biblioteca Angular
+ npm install @ionic/storage-angular
+
+ *Como es un módulo va en los imports:
+ import { IonicStorageModule } from '@ionic/storage-angular';
+
+@NgModule({
+  imports: [
+    IonicStorageModule.forRoot()
+  ]
+})
+export class AppModule { }
+
+*Creo un servicio:
+import { Injectable } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class StorageService {
+  private _storage: Storage | null = null;
+
+  constructor(private storage: Storage) {
+    this.init();
+  }
+
+  async init() {
+    const storage = await this.storage.create();
+    this._storage = storage;
+  }
+ {...}
+}
+
+*Inyectamos el servicio
+src\app\components\article\article.component.ts
+import { StorageService } from '../../services/storage.service';
+{...}
+```

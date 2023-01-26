@@ -7,18 +7,21 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense" mode="ios" class="ion-no-border">
     <ion-toolbar>
-      <ion-title size="large">Cinta's News</ion-title>
+      <ion-title size="large">
+        <img alt="triki" src="/assets/icon/hipopotamo.png" /> Cinta's News
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
   <!--  Creamos la lista de noticias del modulo (src\app\components\articles)-->
 
   <app-articles [articles]="articles"></app-articles>
-  
-  <ion-infinite-scroll 
-  threshold="25%"
-  position="bottom" 
-  (ionInfinite)="loadData()">
+
+  <ion-infinite-scroll
+    threshold="25%"
+    position="bottom"
+    (ionInfinite)="loadData()"
+  >
     <ion-infinite-scroll-content
       loadingSpinner="bubbles"
       loadingText="Cargando datos..."
