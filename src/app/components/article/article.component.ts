@@ -44,7 +44,7 @@ export class ArticleComponent {
 
     const normalBtns: ActionSheetButton[] = [
       {//si el articulo está en favoritos remover favorito
-        text: articleInFavorite ? '✂️Borrar de favorito' : '💚Favorito',
+        text: articleInFavorite ? '✂️ Borrar de favorito' : '💚 Favoritos',
         /* icon: articleInFavorite ? 'heart' : 'heart-outline', */
         cssClass: 'green' ,
         handler: () => this.onToggleFavorite(),
@@ -58,8 +58,8 @@ export class ArticleComponent {
     ];
 
     const shareBtn: ActionSheetButton = {
-      text: 'Compartir',
-      icon: 'share-outline',
+      text: '🏹 Compartir',
+    /*   icon: 'share-outline', */
       handler: () => this.onShareArticle(),
     };
 
