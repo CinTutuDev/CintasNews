@@ -8,6 +8,7 @@ import {
 } from '../interfaces';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { storeNews } from "../data/mock-news";
 
 const apiKey = environment.apiKey;
 const apiUrl = environment.apiUrl;
@@ -15,7 +16,8 @@ const apiUrl = environment.apiUrl;
   providedIn: 'root',
 })
 export class ApiNewsService {
-  private articlesByCategoryAndPage: ArticlesByCategoryAndPage = {};
+ 
+  private articlesByCategoryAndPage:ArticlesByCategoryAndPage = <ArticlesByCategoryAndPage>storeNews;
 
   constructor(private http: HttpClient) {}
 
