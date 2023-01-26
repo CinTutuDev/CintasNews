@@ -158,4 +158,11 @@ URL(los tienes que tener para generar a 512px)
 https://seochecker.it/web-app-manifest-generator
 ```
 
+## 🚀 Subir proyecto
+
+```
+URL
+https://firebase.google.com/?hl=es-419
+```
+
 **Free Software, Hell Yeah!🤘**
