@@ -142,7 +142,7 @@ import { StorageService } from '../../services/storage.service';
 {...}
 ```
 
-## PWA
+## 🌐 PWA
 
 ```
 URl
@@ -151,7 +151,7 @@ https://ionicframework.com/docs/angular/pwa
  ng add @angular/pwa
  ionic build --prod --service-worker
 ```
-## Generador ico
+##  📸 Generador ico
 
 ```
 URL(los tienes que tener para generar a 512px)
