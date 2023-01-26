@@ -163,6 +163,14 @@ https://seochecker.it/web-app-manifest-generator
 ```
 URL
 https://firebase.google.com/?hl=es-419
+
+1º Crear proyecto
+2º Hosting y comenzar
+3º npm install -g firebase-tools
+4º firebase login
+5º firebase init
+5º 
+
 ```
 
 **Free Software, Hell Yeah!🤘**
