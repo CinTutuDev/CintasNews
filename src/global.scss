@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -25,24 +25,30 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-.text-primary{
- color:var(--ion-color-primary);
+.text-primary {
+  color: var(--ion-color-primary);
 }
-.article-source-name{
- font-size: 12px;
+.article-source-name {
+  font-size: 12px;
 }
-.red{
- color: red !important;
+.red {
+  color: red !important;
 }
-.favorite{
- color: violet !important;
+.favorite {
+  color: violet !important;
 }
-.compartir{
- color: rgb(103, 106, 20) !important;
+.compartir {
+  color: rgb(103, 106, 20) !important;
 }
-.green{
- color: green;
+.green {
+  -webkit-text-fill-color: rgb(33, 200, 33);
+  -webkit-text-stroke: 1px black;
 }
-.blue{
- color:rgb(0, 183, 255);
+.blue {
+  -webkit-text-fill-color: rgb(0, 183, 255);
+  -webkit-text-stroke: 1px black;
+}
+.nameMy {
+  -webkit-text-fill-color: rgb(229, 110, 130);
+  -webkit-text-stroke: 1px black;
 }
