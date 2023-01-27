@@ -176,6 +176,7 @@ firebase deploy
 8º Nos sale rl url a nuestra app🎉
 📢 NOTA❗❗ si se hacen cambios en el proyecto lanzar:
 ionic build --prod --service-worker
+firebase deploy
 ```
 
 
