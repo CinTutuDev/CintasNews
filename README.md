@@ -1,4 +1,6 @@
 # ![noticias2](https://user-images.githubusercontent.com/71487857/212994728-242e7ef4-a564-433b-b171-d77209666426.png) app-noticias
+### Hosting URL:  https://cinta-s-news.web.app
+
 
 ### Proyecto realizado con ![angular](https://user-images.githubusercontent.com/71487857/212993270-3cf1454e-f0d7-4164-bc01-20d5fe6469cd.png)Angular/![descarga](https://user-images.githubusercontent.com/71487857/212993697-6234ef26-0e4a-40ce-bc8a-a9bfa858a74b.png)Ionic
 
@@ -15,7 +17,7 @@
 
 ```
 *API Noticias:
-   https://newsapi.org/
+   https://newsapi.org/ 
 ```
 
 ## 🎱Crear servicio para interactuar con back para petición API
@@ -147,9 +149,8 @@ import { StorageService } from '../../services/storage.service';
 ```
 URl
 https://ionicframework.com/docs/angular/pwa
-
- ng add @angular/pwa
- ionic build --prod --service-worker
+ng add @angular/pwa
+ionic build --prod --service-worker
 ```
 <<<<<<< HEAD
 
@@ -176,8 +177,11 @@ https://firebase.google.com/?hl=es-419
 3º npm install -g firebase-tools
 4º firebase login
 5º firebase init
-5º 
-
+6º Ir a configuracion proyecto en firebase y copiar el ID del proyecto
+7º Abrir terminal :
+firebase use --add 'id'
+firebase deploy
+8º Nos sale rl url a nuestra app🎉
 ```
 >>>>>>> 1454fece7dc27df400ef2ef06b28be732eb8a660
 
