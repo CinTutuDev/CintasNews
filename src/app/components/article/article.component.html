@@ -1,4 +1,4 @@
-<ion-card>
+<ion-card color="dark">
   <!-- <ion-card-title>Card Title</ion-card-title> -->
   <ion-card-subtitle class="ion-margin">
 
@@ -8,11 +8,13 @@
         <span class="text-primary">{{ index }}. </span>
       </ion-col>
 
+  
       <ion-col aling="right">
+        <div class="noticia-more">
         <ion-button (click)="openMenu()" fill="clear">
           <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
         </ion-button>
-        
+      </div>
       </ion-col>
     </ion-row>
 
@@ -22,7 +24,7 @@
   <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
     {{article.title}}
   </ion-card-title>
-  <ion-img *ngIf="article.urlToImage" [src]="article.urlToImage" (click)="openArticle()"></ion-img>
+  <ion-img *ngIf="article.urlToImage" [src]="article.urlToImage" (click)="openArticle()" class="animated fadeIn fast"></ion-img>
   <ion-card-content *ngIf="article.description">
     <p>{{article.description}}</p>
   </ion-card-content>
