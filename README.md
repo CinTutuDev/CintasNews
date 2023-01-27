@@ -142,7 +142,7 @@ import { StorageService } from '../../services/storage.service';
 {...}
 ```
 
-## PWA
+## 🌐 PWA
 
 ```
 URl
@@ -151,13 +151,34 @@ https://ionicframework.com/docs/angular/pwa
  ng add @angular/pwa
  ionic build --prod --service-worker
 ```
+<<<<<<< HEAD
 
 ## Generador ico
+=======
+##  📸 Generador ico
+>>>>>>> 1454fece7dc27df400ef2ef06b28be732eb8a660
 
 ```
 URL(los tienes que tener para generar a 512px)
 https://seochecker.it/web-app-manifest-generator
 ```
 
+<<<<<<< HEAD
+=======
+## 🚀 Subir proyecto
+
+```
+URL
+https://firebase.google.com/?hl=es-419
+
+1º Crear proyecto
+2º Hosting y comenzar
+3º npm install -g firebase-tools
+4º firebase login
+5º firebase init
+5º 
+
+```
+>>>>>>> 1454fece7dc27df400ef2ef06b28be732eb8a660
 
 **Free Software, Hell Yeah!🤘**
