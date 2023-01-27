@@ -174,6 +174,8 @@ https://firebase.google.com/?hl=es-419
 firebase use --add 'id'
 firebase deploy
 8º Nos sale rl url a nuestra app🎉
+📢 NOTA❗❗ si se hacen cambios en el proyecto lanzar:
+ionic build --prod --service-worker
 ```
 
 
