@@ -152,20 +152,12 @@ https://ionicframework.com/docs/angular/pwa
 ng add @angular/pwa
 ionic build --prod --service-worker
 ```
-<<<<<<< HEAD
 
-## Generador ico
-=======
 ##  📸 Generador ico
->>>>>>> 1454fece7dc27df400ef2ef06b28be732eb8a660
-
 ```
 URL(los tienes que tener para generar a 512px)
 https://seochecker.it/web-app-manifest-generator
 ```
-
-<<<<<<< HEAD
-=======
 ## 🚀 Subir proyecto
 
 ```
@@ -182,7 +174,10 @@ https://firebase.google.com/?hl=es-419
 firebase use --add 'id'
 firebase deploy
 8º Nos sale rl url a nuestra app🎉
+📢 NOTA❗❗ si se hacen cambios en el proyecto lanzar:
+ionic build --prod --service-worker
+firebase deploy
 ```
->>>>>>> 1454fece7dc27df400ef2ef06b28be732eb8a660
+
 
 **Free Software, Hell Yeah!🤘**
