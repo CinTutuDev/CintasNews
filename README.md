@@ -164,6 +164,9 @@ https://seochecker.it/web-app-manifest-generator
 URL
 https://firebase.google.com/?hl=es-419
 
+Página donde explica como subir
+https://www.youtube.com/watch?v=P4K59gr8sw0&ab_channel=Garajedeideas
+
 1º Crear proyecto
 2º Hosting y comenzar
 3º npm install -g firebase-tools
